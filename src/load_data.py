@@ -1,0 +1,16 @@
+import pandas as pd
+file = "data/transactions.csv"
+df = pd.read_csv(file)
+print("\n      First 5 Rows      ")
+print(df.head())
+print("\n      Dataset Information       ")
+print(df.info())
+print("\n      Shape of Dataset       ")
+print(f"Rows: {df.shape[0]}")
+print(f"Columns: {df.shape[1]}")
+print("\n      Column Names      ")
+print(df.columns)
+print("\n      Missing Values      ")
+print(df.isnull().sum())
+print("\n      Statistical Summary      ")
+print(df.describe())
